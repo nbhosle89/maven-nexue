@@ -29,7 +29,7 @@
         <repository>
             <id>deployment</id>
             <name>Internal Releases</name>
-            <url>http://18.221.192.210:8081/repository/sample-release/</url>
+            <url>http://18.221.192.210:8081/repository/maven-deploy-repo/</url>
         </repository>
         <snapshotRepository>
             <id>deployment</id>
