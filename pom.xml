@@ -34,7 +34,7 @@
         <snapshotRepository>
             <id>deployment</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://18.221.192.210:8081/repository/sample-snp/</url>
+            <url>http://18.221.192.210:8081/repository/sample-release/</url>
         </snapshotRepository>
     </distributionManagement>
   <dependencies>
