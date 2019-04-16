@@ -25,18 +25,26 @@
       </plugin>
     </plugins>
   </build>
-   <distributionManagement>
+   <repositories>
+    <repository>
+      <id>nexus</id>
+      <url>http://10.0.0.241:8081/repository/demo-maven-group/</url>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
         <repository>
-            <id>deployment</id>
+            <id>nexus</id>
             <name>Internal Releases</name>
-            <url>http://18.221.192.210:8081/repository/release_Repo/</url>
+            <url>http://10.0.0.241:8081/repository/demo-maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>deployment</id>
+            <id>nexus</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://18.221.192.210:8081/repository/snap-repo/</url>
+            <url>http://10.0.0.241:8081/repository/demo-maven-snapshpots/</url>
         </snapshotRepository>
-    </distributionManagement>
+   </distributionManagement>
+  
   <dependencies>
   	<dependency>
   		<groupId>javax.servlet</groupId>
