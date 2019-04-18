@@ -41,7 +41,7 @@
         <snapshotRepository>
             <id>nexus</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://10.0.0.241:8081/repository/demo-maven-snapshpots/</url>
+            <url>http://10.0.0.241:8081/repository/demo-maven-snapshots/</url>
         </snapshotRepository>
    </distributionManagement>
   
