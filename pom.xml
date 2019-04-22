@@ -28,7 +28,7 @@
    <repositories>
     <repository>
       <id>nexus</id>
-      <url>http://10.0.0.241:8081/repository/demo-maven-group/</url>
+      <url>http://18.185.31.179:8081/repository/demo-maven-group/</url>
     </repository>
   </repositories>
 
@@ -36,12 +36,12 @@
         <repository>
             <id>nexus</id>
             <name>Internal Releases</name>
-            <url>http://10.0.0.241:8081/repository/demo-maven-releases/</url>
+            <url>http://10.0.0.241:8081/repository/my-releases-repo/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://10.0.0.241:8081/repository/demo-maven-snapshots/</url>
+            <url>http://10.0.0.241:8081/repository/my-snapshot-repo/</url>
         </snapshotRepository>
    </distributionManagement>
   
