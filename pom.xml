@@ -32,4 +32,24 @@
     </repository>
   </repositories>
 
-
+  <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Internal Releases</name>
+            <url>http://18.185.31.179:8081/#admin/repository/repositories:my-release-repo</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://18.185.31.179:8081/#admin/repository/repositories:my-snapshot-repo/</url>
+        </snapshotRepository>
+   </distributionManagement>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>javax.servlet-api</artifactId>
+  		<version>3.0.1</version>
+  	</dependency>
+  </dependencies>
+</project>
