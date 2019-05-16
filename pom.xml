@@ -36,12 +36,12 @@
         <repository>
             <id>nexus-repo</id>
             <name>Internal Releases</name>
-            <url>http://18.185.31.179:8081/#admin/repository/repositories:my-release-repo</url>
+            <url>http://3.84.215.124:8081/#admin/repository/repositories:Demo-Release</url>
         </repository>
         <snapshotRepository>
             <id>nexus-repo</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://18.185.31.179:8081/#admin/repository/repositories:my-snapshot-repo/</url>
+            <url>http://3.84.215.124:8081/#admin/repository/repositories:Demo-Snapshot/</url>
         </snapshotRepository>
    </distributionManagement>
   
