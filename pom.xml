@@ -1,55 +1,40 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.jdevs</groupId>
-  <artifactId>studentapp</artifactId>
-  <version>2.5</version>
+  <groupId>com.jenkins.demo</groupId>
+  <artifactId>JenkinsWar1</artifactId>
   <packaging>war</packaging>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>JenkinsWar Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
   <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.3</version>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>2.6</version>
-        <configuration>
-          <warSourceDirectory>WebContent</warSourceDirectory>
-          <failOnMissingWebXml>false</failOnMissingWebXml>
-        </configuration>
-      </plugin>
-    </plugins>
+    <finalName>JenkinsWar</finalName>
   </build>
-   <repositories>
+  <repositories>
     <repository>
-      <id>nexus-repo</id>
-      <url>http://52.59.208.236:8081/#admin/repository/repositories:nexus-repo/</url>
+      <id>nexus</id>
+      <url>http://3.93.72.26:8081/#admin/repository/repositories:Demo-Group</url>
     </repository>
   </repositories>
 
   <distributionManagement>
         <repository>
-            <id>nexus-repo</id>
+            <id>nexus</id>
             <name>Internal Releases</name>
-            <url>http://3.84.215.124:8081/#admin/repository/repositories:Demo-Release</url>
+            <url>http://3.93.72.26:8081/#admin/repository/repositories:Demo-Release</url>
         </repository>
         <snapshotRepository>
-            <id>nexus-repo</id>
+            <id>nexus</id>
             <name>Internal Snapshot Releases</name>
-            <url>http://3.84.215.124:8081/#admin/repository/repositories:Demo-Snapshot/</url>
+            <url>http://3.93.72.26:8081/#admin/repository/repositories:Demo-Snapshot</url>
         </snapshotRepository>
    </distributionManagement>
-  
-  <dependencies>
-  	<dependency>
-  		<groupId>javax.servlet</groupId>
-  		<artifactId>javax.servlet-api</artifactId>
-  		<version>3.0.1</version>
-  	</dependency>
-  </dependencies>
 </project>
